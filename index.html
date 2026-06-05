@@ -44,6 +44,10 @@ nav {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
+.nav-inner {
+  max-width: 1100px; margin: 0 auto; width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+}
 .nav-logo {
   font-weight: 800; font-size: 1.1rem; letter-spacing: -0.02em;
   color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 0.4rem;
@@ -100,7 +104,7 @@ nav ul a:hover { color: var(--text); }
 }
 .hero-inner {
   position: relative; z-index: 1;
-  max-width: 900px;
+  max-width: 1100px; margin: 0 auto; width: 100%;
 }
 .hero-tag {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -167,13 +171,14 @@ nav ul a:hover { color: var(--text); }
 
 /* ─── SECTION BASE ─── */
 section { padding: 7rem 2.5rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
 .section-eyebrow {
   font-family: 'Geist Mono', monospace;
   font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
   color: var(--blue); margin-bottom: 1rem; font-weight: 400;
 }
 .section-title {
-  font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800;
+  font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800;
   letter-spacing: -0.025em; line-height: 1.1;
   color: var(--text); margin-bottom: 1rem;
 }
@@ -394,6 +399,7 @@ footer p { font-size: 0.78rem; color: #475569; }
 
 <!-- NAV -->
 <nav>
+<div class="nav-inner">
   <a class="nav-logo" href="#">
     <div class="nav-logo-mark">AZ</div>
     A-Z Concepts
@@ -404,6 +410,7 @@ footer p { font-size: 0.78rem; color: #475569; }
     <li><a href="#why">Why Us</a></li>
     <li><a href="#" class="nav-cta" onclick="openModal(event)">Get a Quote</a></li>
   </ul>
+</div>
 </nav>
 
 <!-- HERO -->
@@ -445,6 +452,7 @@ footer p { font-size: 0.78rem; color: #475569; }
 
 <!-- WHAT WE DO -->
 <section class="what" id="what">
+<div class="section-inner">
   <div class="what-header reveal">
     <p class="section-eyebrow">// services</p>
     <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
@@ -494,10 +502,12 @@ footer p { font-size: 0.78rem; color: #475569; }
       <p>New service? Updated hours? Need to add photos? We keep your site current without you having to figure out a CMS.</p>
     </div>
   </div>
+</div>
 </section>
 
 <!-- HOW IT WORKS -->
 <section class="how" id="how">
+<div class="section-inner">
   <div class="how-inner">
     <div>
       <div class="reveal">
@@ -567,10 +577,12 @@ footer p { font-size: 0.78rem; color: #475569; }
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <!-- WHY US -->
 <section class="why" id="why">
+<div class="section-inner">
   <div class="why-inner">
     <div class="reveal">
       <p class="section-eyebrow">// why a-z concepts</p>
@@ -616,6 +628,7 @@ footer p { font-size: 0.78rem; color: #475569; }
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <!-- CTA -->
